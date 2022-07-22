@@ -1,7 +1,24 @@
+import React, {useState, useEffect } from "react"
+import axios from "axios"
 
 
-const Home = () => {
-  
+function Home() {
+
+ 
+const url ='https://jsonplaceholder.typicode.com/users'
+const [users, setUsers] = useState(null)
+
+useEffect(() => {
+
+  axios.get(url).then(response => {
+    setUsers(response.data)
+
+})
+ 
+}, [url])  
+
+
+if(users){ 
     return (
 
       
@@ -16,14 +33,13 @@ const Home = () => {
       
     <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 mb-4 px-4">
 
-
     <div class="col">
       <div class="card h-100 shadow">
         <img src="https://cdn.glitch.global/0c15c725-e764-4776-a32b-28fdb0e82a47/1564531_chart_business_graph_statistics_icon.png?v=1656783778212" class="card-img-top rounded mx-auto d-block w-50" alt=""></img>
         <div class="card-body ">
-          <h5 class="card-title"><b id="mensa"></b></h5>
+          <h5 class="card-title"><b>{users[0].name}</b></h5>
           <div class="d-flex justify-content-between">
-            <p class="card-text">Treskow Allee 82 <br></br>13127 Berlin <br></br> Offen bis: 18 Uhr</p>
+            <p class="card-text">{users[0].address.street} <br></br> {users[0].address.zipcode} <br></br> Offen bis: 18 Uhr</p>
             <p class="card-text">Distance <br></br>700m<br></br> gut besucht!</p>
           </div>
         </div>
@@ -36,9 +52,9 @@ const Home = () => {
       <div class="card h-100 shadow">
         <img src="https://cdn.glitch.global/0c15c725-e764-4776-a32b-28fdb0e82a47/1564531_chart_business_graph_statistics_icon.png?v=1656783778212" class="card-img-top rounded mx-auto d-block w-50" alt=""></img>
         <div class="card-body ">
-          <h5 class="card-title"><b>HTW Mensa</b></h5>
+          <h5 class="card-title"><b>{users[1].name}</b></h5>
           <div class="d-flex justify-content-between">
-            <p class="card-text">Treskow Allee 82 <br></br>13127 Berlin <br></br> Offen bis: 18 Uhr</p>
+            <p class="card-text">{users[1].address.street} <br></br> {users[1].address.zipcode}<br></br> Offen bis: 18 Uhr</p>
             <p class="card-text">Distance <br></br>700m<br></br> gut besucht!</p>
           </div>
         </div>
@@ -49,9 +65,9 @@ const Home = () => {
       <div class="card h-100 shadow">
         <img src="https://cdn.glitch.global/0c15c725-e764-4776-a32b-28fdb0e82a47/1564531_chart_business_graph_statistics_icon.png?v=1656783778212" class="card-img-top rounded mx-auto d-block w-50" alt=""></img>
         <div class="card-body ">
-          <h5 class="card-title"><b>HTW Mensa</b></h5>
+          <h5 class="card-title"><b>{users[2].name}</b></h5>
           <div class="d-flex justify-content-between">
-            <p class="card-text">Treskow Allee 82 <br></br>13127 Berlin <br></br> Offen bis: 18 Uhr</p>
+            <p class="card-text">{users[2].address.street} <br></br> {users[2].address.zipcode}<br></br> Offen bis: 18 Uhr</p>
             <p class="card-text">Distance <br></br>700m<br></br> gut besucht!</p>
           </div>
         </div>
@@ -62,9 +78,9 @@ const Home = () => {
       <div class="card h-100 shadow">
         <img src="https://cdn.glitch.global/0c15c725-e764-4776-a32b-28fdb0e82a47/1564531_chart_business_graph_statistics_icon.png?v=1656783778212" class="card-img-top rounded mx-auto d-block w-50" alt=""></img>
         <div class="card-body ">
-          <h5 class="card-title"><b>HTW Mensa</b></h5>
+          <h5 class="card-title"><b>{users[3].name}</b></h5>
           <div class="d-flex justify-content-between">
-            <p class="card-text">Treskow Allee 82 <br></br>13127 Berlin <br></br> Offen bis: 18 Uhr</p>
+            <p class="card-text">{users[3].address.street} <br></br> {users[3].address.zipcode} <br></br> Offen bis: 18 Uhr</p>
             <p class="card-text">Distance <br></br>700m<br></br> gut besucht!</p>
           </div>
         </div>
@@ -75,9 +91,9 @@ const Home = () => {
       <div class="card h-100 shadow">
         <img src="https://cdn.glitch.global/0c15c725-e764-4776-a32b-28fdb0e82a47/1564531_chart_business_graph_statistics_icon.png?v=1656783778212" class="card-img-top rounded mx-auto d-block w-50" alt=""></img>
         <div class="card-body ">
-          <h5 class="card-title"><b>HTW Mensa</b></h5>
+          <h5 class="card-title"><b>{users[4].name}</b></h5>
           <div class="d-flex justify-content-between">
-            <p class="card-text">Treskow Allee 82 <br></br>13127 Berlin <br></br> Offen bis: 18 Uhr</p>
+            <p class="card-text">{users[4].address.street} <br></br> {users[4].address.zipcode}<br></br> Offen bis: 18 Uhr</p>
             <p class="card-text">Distance <br></br>700m<br></br> gut besucht!</p>
           </div>
         </div>
@@ -139,6 +155,17 @@ const Home = () => {
     
         
     );
+
+  }
+  return (
+    
+<h1>Loading...</h1> 
+
+
+
+   
+  )
+
 }
 
 export default Home;
