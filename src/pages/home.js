@@ -9,16 +9,16 @@ const Home = () => {
       <div>
     
       <div>
-        . <br/> . <br/> 
+        . <br/> . <br/> .
       </div>
       
       
       
-        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 mb-5 px-4">
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 mb-4 px-4">
 
 
     <div class="col">
-      <div class="card h-100">
+      <div class="card h-100 shadow">
         <img src="https://cdn.glitch.global/0c15c725-e764-4776-a32b-28fdb0e82a47/1564531_chart_business_graph_statistics_icon.png?v=1656783778212" class="card-img-top rounded mx-auto d-block w-50" alt=""></img>
         <div class="card-body ">
           <h5 class="card-title"><b id="mensa"></b></h5>
@@ -33,7 +33,7 @@ const Home = () => {
         
           
     <div class="col">
-      <div class="card h-100">
+      <div class="card h-100 shadow">
         <img src="https://cdn.glitch.global/0c15c725-e764-4776-a32b-28fdb0e82a47/1564531_chart_business_graph_statistics_icon.png?v=1656783778212" class="card-img-top rounded mx-auto d-block w-50" alt=""></img>
         <div class="card-body ">
           <h5 class="card-title"><b>HTW Mensa</b></h5>
@@ -46,7 +46,7 @@ const Home = () => {
     </div>
           
           <div class="col">
-      <div class="card h-100">
+      <div class="card h-100 shadow">
         <img src="https://cdn.glitch.global/0c15c725-e764-4776-a32b-28fdb0e82a47/1564531_chart_business_graph_statistics_icon.png?v=1656783778212" class="card-img-top rounded mx-auto d-block w-50" alt=""></img>
         <div class="card-body ">
           <h5 class="card-title"><b>HTW Mensa</b></h5>
@@ -59,7 +59,7 @@ const Home = () => {
     </div>
           
           <div class="col">
-      <div class="card h-100">
+      <div class="card h-100 shadow">
         <img src="https://cdn.glitch.global/0c15c725-e764-4776-a32b-28fdb0e82a47/1564531_chart_business_graph_statistics_icon.png?v=1656783778212" class="card-img-top rounded mx-auto d-block w-50" alt=""></img>
         <div class="card-body ">
           <h5 class="card-title"><b>HTW Mensa</b></h5>
@@ -72,7 +72,7 @@ const Home = () => {
     </div>
           
            <div class="col">
-      <div class="card h-100">
+      <div class="card h-100 shadow">
         <img src="https://cdn.glitch.global/0c15c725-e764-4776-a32b-28fdb0e82a47/1564531_chart_business_graph_statistics_icon.png?v=1656783778212" class="card-img-top rounded mx-auto d-block w-50" alt=""></img>
         <div class="card-body ">
           <h5 class="card-title"><b>HTW Mensa</b></h5>
@@ -85,7 +85,7 @@ const Home = () => {
     </div>
     
     <div>
-        . <br/> . <br/> 
+    . <br/> . <br/> .
       </div>
     
   </div>
