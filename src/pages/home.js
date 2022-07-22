@@ -1,12 +1,20 @@
+
+
 const Home = () => {
+  
     return (
+
+      
+
       <div>
     
-    
+      <div>
+        . <br/> . <br/> 
+      </div>
       
       
       
-        <div class="row row-cols-1 row-cols-md-3 g-4 mt-25">
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 mb-5 px-4">
 
 
     <div class="col">
@@ -76,7 +84,9 @@ const Home = () => {
       </div>
     </div>
     
-    
+    <div>
+        . <br/> . <br/> 
+      </div>
     
   </div>
         
@@ -114,7 +124,7 @@ const Home = () => {
       </a>
        <a class="navbar-brand" href="/MensaSelectionPage">
       </a>
-       <a class="navbar-brand" href="#">
+       <a class="navbar-brand" href="/">
         <img src="https://cdn.glitch.global/0c15c725-e764-4776-a32b-28fdb0e82a47/bell_orange.png?v=1656865820884" alt="" width="24" height="24"></img>
       </a>
     </div>  
