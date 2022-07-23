@@ -13,8 +13,6 @@ const Welcomepage = () => {
         backgroundImage: `url(${img})`,
     
             overflowX: "hidden",
-            maxWidth: "100vw",
-            maxHeight:"100vh",
             margin:"0", 
             padding:"0",
             position: "fixed",
