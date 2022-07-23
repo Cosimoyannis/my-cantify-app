@@ -34,7 +34,7 @@ if(users){
     <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 mb-4 px-4" style={{
   overflowX: "hidden",
   maxWidth: "100vw",
-  maxHeight:"100vh",
+
   margin:"0", 
   padding:"0",
   position: "fixed",}}>
