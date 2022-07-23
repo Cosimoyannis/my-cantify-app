@@ -8,9 +8,16 @@ const Welcomepage = () => {
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        width: '110vw',
+        width: '100vw',
         height: '100vh',
         backgroundImage: `url(${img})`,
+    
+            overflowX: "hidden",
+            maxWidth: "100vw",
+            maxHeight:"100vh",
+            margin:"0", 
+            padding:"0",
+            position: "fixed",
         
       };
 
@@ -20,13 +27,13 @@ const Welcomepage = () => {
         
        
 
-        <div class="">
+        <div class="d-flex justify-content-center" >
         <img src={logo} alt="" width="150" height="150"></img>
         </div>
 
 
-        <div>
-        <h1 style={{color: "white", font:"Roboto"}}> 
+        <div class="d-flex justify-content-center">
+        <h1 style={{color: "white", font:"Roboto"}} class="text-center"> 
              Be a part of Cantify <br/>
              spend more time with  <br/>
              friends and less with  <br/>
@@ -35,8 +42,8 @@ const Welcomepage = () => {
 
 
         <div class="d-grid gap-2 col-8 mx-auto ">
-        <button class="btn btn-warning rounded-pill" href="/welcomepage">Log in</button>
-        <button class="btn btn-warning rounded-pill">Register</button>
+        <a href="/home" class="btn btn-warning rounded-pill">Log in</a>
+        <a href="/home" class="btn btn-warning rounded-pill">Register</a>
         </div>
 
        
