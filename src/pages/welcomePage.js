@@ -8,12 +8,13 @@ const Welcomepage = () => {
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
+        height: '100vh',
         backgroundImage: `url(${img})`,
     
             overflowX: "hidden",
             margin:"0", 
             padding:"0",
-      
+
         
       };
 
