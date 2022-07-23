@@ -25,7 +25,7 @@ if(users){
 
       <div>
     
-      <div>
+      <div  style={{color:"white"}}>
         . <br/> . <br/> .
       </div>
       
@@ -105,7 +105,7 @@ if(users){
       </div>
     </div>
     
-    <div>
+    <div style={{color:"white"}}>
     . <br/> . <br/> .
       </div>
     
