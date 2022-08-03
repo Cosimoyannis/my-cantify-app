@@ -1,5 +1,7 @@
 import React, {useState, useEffect } from "react"
 import axios from "axios"
+import DateSelectionPage from "./dateSelectionPage"
+import VisitorChart from "../components/visitorChart"
 
 
 function Home() {
@@ -40,20 +42,126 @@ if(users){
   padding:"0",
   }}>
 
+  <a href="/dateselectionpage" style={{color:"inherit", textDecoration:"none" }} >
+
     <div class="col">
-      <div class="card h-100 shadow">
-        <img src="https://cdn.glitch.global/0c15c725-e764-4776-a32b-28fdb0e82a47/1564531_chart_business_graph_statistics_icon.png?v=1656783778212" class="card-img-top rounded mx-auto d-block w-50" alt=""></img>
+      <div class="card h-100 shadow d-flex flex-row" >
         <div class="card-body ">
           <h5 class="card-title"><b>{users[0].name}</b></h5>
           <div class="d-flex justify-content-between">
-            <p class="card-text">{users[0].address.street} <br></br> {users[0].address.zipcode} <br></br> Offen bis: 18 Uhr</p>
-            <p class="card-text">Distance <br></br>700m<br></br> gut besucht!</p>
+            <p class="card-text">{users[1].address.street} <br></br> {users[1].address.zipcode} <br></br> Offen bis: 18 Uhr</p>
           </div>
         </div>
+
+        <div class="col align-self-center text-end" style={{margin:"5vw"}}>
+        <a href="/home" class="btn btn-warning rounded-pill">700m</a>
+        </div>
+
       </div>
     </div>
-          
-        
+  </a>
+
+
+
+  <a href="/dateselectionpage" style={{color:"inherit", textDecoration:"none" }} >
+    <div class="col">
+      <div class="card h-100 shadow d-flex flex-row">
+        <div class="card-body ">
+          <h5 class="card-title"><b>{users[2].name}</b></h5>
+          <div class="d-flex justify-content-between">
+            <p class="card-text">{users[2].address.street} <br></br> {users[2].address.zipcode} <br></br> Offen bis: 18 Uhr</p>
+          </div>
+        </div>
+
+        <div class="col align-self-center text-end" style={{margin:"5vw"}}>
+        <a href="/home" class="btn btn-warning rounded-pill">700m</a>
+        </div>
+
+      </div>
+    </div>
+  </a>
+
+
+
+  <a href="/dateselectionpage" style={{color:"inherit", textDecoration:"none" }} >
+    <div class="col">
+      <div class="card h-100 shadow d-flex flex-row">
+        <div class="card-body ">
+          <h5 class="card-title"><b>{users[3].name}</b></h5>
+          <div class="d-flex justify-content-between">
+            <p class="card-text">{users[3].address.street} <br></br> {users[3].address.zipcode} <br></br> Offen bis: 18 Uhr</p>
+          </div>
+        </div>
+
+        <div class="col align-self-center text-end" style={{margin:"5vw"}}>
+        <a href="/home" class="btn btn-warning rounded-pill">700m</a>
+        </div>
+
+      </div>
+    </div>
+  </a>
+
+
+
+  <a href="/dateselectionpage" style={{color:"inherit", textDecoration:"none" }} >
+    <div class="col">
+      <div class="card h-100 shadow d-flex flex-row">
+        <div class="card-body ">
+          <h5 class="card-title"><b>{users[4].name}</b></h5>
+          <div class="d-flex justify-content-between">
+            <p class="card-text">{users[4].address.street} <br></br> {users[4].address.zipcode} <br></br> Offen bis: 18 Uhr</p>
+          </div>
+        </div>
+
+        <div class="col align-self-center text-end" style={{margin:"5vw"}}>
+        <a href="/home" class="btn btn-warning rounded-pill">700m</a>
+        </div>
+
+      </div>
+    </div>
+  </a>
+
+
+
+  <a href="/dateselectionpage" style={{color:"inherit", textDecoration:"none" }} >
+    <div class="col">
+      <div class="card h-100 shadow d-flex flex-row">
+        <div class="card-body ">
+          <h5 class="card-title"><b>{users[5].name}</b></h5>
+          <div class="d-flex justify-content-between">
+            <p class="card-text">{users[5].address.street} <br></br> {users[5].address.zipcode} <br></br> Offen bis: 18 Uhr</p>
+          </div>
+        </div>
+
+        <div class="col align-self-center text-end" style={{margin:"5vw"}}>
+        <a href="/home" class="btn btn-warning rounded-pill">700m</a>
+        </div>
+
+      </div>
+    </div>
+  </a>
+
+
+
+  <a href="/dateselectionpage" style={{color:"inherit", textDecoration:"none" }} >
+    <div class="col">
+      <div class="card h-100 shadow d-flex flex-row">
+        <div class="card-body ">
+          <h5 class="card-title"><b>{users[6].name}</b></h5>
+          <div class="d-flex justify-content-between">
+            <p class="card-text">{users[6].address.street} <br></br> {users[6].address.zipcode} <br></br> Offen bis: 18 Uhr</p>
+          </div>
+        </div>
+
+        <div class="col align-self-center text-end" style={{margin:"5vw"}}>
+        <a href="/home" class="btn btn-warning rounded-pill">700m</a>
+        </div>
+
+      </div>
+    </div>
+  </a>
+
+
           
     <div class="col">
       <div class="card h-100 shadow">
@@ -68,6 +176,8 @@ if(users){
       </div>
     </div>
           
+
+
           <div class="col">
       <div class="card h-100 shadow">
         <img src="https://cdn.glitch.global/0c15c725-e764-4776-a32b-28fdb0e82a47/1564531_chart_business_graph_statistics_icon.png?v=1656783778212" class="card-img-top rounded mx-auto d-block w-50" alt=""></img>
@@ -81,6 +191,8 @@ if(users){
       </div>
     </div>
           
+
+
           <div class="col">
       <div class="card h-100 shadow">
         <img src="https://cdn.glitch.global/0c15c725-e764-4776-a32b-28fdb0e82a47/1564531_chart_business_graph_statistics_icon.png?v=1656783778212" class="card-img-top rounded mx-auto d-block w-50" alt=""></img>
@@ -94,6 +206,8 @@ if(users){
       </div>
     </div>
           
+
+
            <div class="col">
       <div class="card h-100 shadow">
         <img src="https://cdn.glitch.global/0c15c725-e764-4776-a32b-28fdb0e82a47/1564531_chart_business_graph_statistics_icon.png?v=1656783778212" class="card-img-top rounded mx-auto d-block w-50" alt=""></img>
@@ -107,6 +221,8 @@ if(users){
       </div>
     </div>
     
+
+
     <div>
       <a style={{color:"white"}}>
     . <br/> . <br/> .
@@ -168,9 +284,12 @@ if(users){
 
   }
   return (
-    
-<h1>Loading...</h1> 
-
+  
+<div class="d-flex justify-content-center">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
 
 
    
