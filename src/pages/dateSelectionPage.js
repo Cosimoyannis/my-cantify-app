@@ -9,6 +9,13 @@ let current_datetime = new Date();
 
 let formatted_date = current_datetime.getDate() + "/" + (current_datetime.getMonth() + 1) + "/" + current_datetime.getFullYear();
 
+let date1 = current_datetime.getDate() + 1 + "/" + (current_datetime.getMonth() + 1) + "/" + current_datetime.getFullYear();
+
+let date2 = current_datetime.getDate() + 2 + "/" + (current_datetime.getMonth() + 1) + "/" + current_datetime.getFullYear();
+
+let date3 = current_datetime.getDate() + 3 + "/" + (current_datetime.getMonth() + 1) + "/" + current_datetime.getFullYear();
+
+
 return (
 
 
@@ -30,9 +37,9 @@ return (
     {formatted_date}
   </button>
   <ul class="dropdown-menu ">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><a class="dropdown-item" href="/mealSelectionPage">{date1}</a></li>
+    <li><a class="dropdown-item" href="#">{date2}</a></li>
+    <li><a class="dropdown-item" href="#">{date3}</a></li>
   </ul>
 </div>
 

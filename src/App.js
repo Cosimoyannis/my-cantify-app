@@ -4,6 +4,7 @@ import Home from './pages/home';
 import Welcomepage from './pages/welcomePage';
 import NavbarTop from './components/navbarTop';
 import DateSelectionPage from './pages/dateSelectionPage';
+import MealSelectionPage from './pages/mealSelectionPage';
 
 function App() {
   return (
@@ -24,6 +25,12 @@ function App() {
         <Route exact path="/dateSelectionPage">
           <NavbarTop />
           <DateSelectionPage />
+          <Navbar />
+        </Route>
+
+        <Route exact path="/mealSelectionPage">
+          <NavbarTop />
+          <MealSelectionPage />
           <Navbar />
         </Route>
         
