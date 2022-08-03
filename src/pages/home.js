@@ -34,7 +34,7 @@ if(users){
       
       
       
-    <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 mb-4 px-4" style={{
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 mb-4 px-2" style={{
   overflowX: "hidden",
   height: "100wh",
   margin:"0", 
