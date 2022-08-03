@@ -51,7 +51,7 @@ function Home() {
 
 
     
-      <a href="/dateselectionpage" style={{color:"inherit", textDecoration:"none" }} >
+      <a href="/mealOverviewPage" style={{color:"inherit", textDecoration:"none" }} >
         <div class="col">
 
           <div class="card h-100 shadow flex-row" style={{backgroundColor: "#FFC529"}}  >
@@ -59,9 +59,9 @@ function Home() {
         
           <img class="col align-self-center" src={ad2} style={{marginLeft: "4vw"}} alt="" width="100" height=""></img>
 
-            <div class="card-body col align-self-center" style={{marginLeft: ""}}>
+            <div class="card-body col align-self-center" style={{marginLeft: "5vw"}}>
               <h5 class="card-title " style={{color: "#C65A39"}}><b>Today is <br />Pizza-Day!</b></h5>
-              <h5 class=" fw-light fs-6"> Enter the code PIZZA at checkout and <br />save 10% </h5>
+              <h5 class=" fw-light fs-6"> Enter the code PIZZA <br /> at checkout and <br />save 10% </h5>
               
             </div>
         
@@ -72,7 +72,7 @@ function Home() {
     
     
     
-      <a href="/dateselectionpage" style={{color:"inherit", textDecoration:"none" }} >
+      <a href="/mealOverviewPage" style={{color:"inherit", textDecoration:"none" }} >
         <div class="col">
           <div class="card h-100 shadow flex-row text-start" >
 
@@ -101,7 +101,7 @@ function Home() {
     
 
 
-      <a href="/dateselectionpage" style={{color:"inherit", textDecoration:"none" }} >
+      <a href="/mealOverviewPage" style={{color:"inherit", textDecoration:"none" }} >
         <div class="col">
 
           <div class="card h-100 shadow flex-row" >
@@ -131,7 +131,7 @@ function Home() {
     
     
     
-      <a href="/dateselectionpage" style={{color:"inherit", textDecoration:"none" }} >
+      <a href="/mealOverviewPage" style={{color:"inherit", textDecoration:"none" }} >
         <div class="col">
           <div class="card h-100 shadow flex-row text-start" >
 
@@ -158,7 +158,7 @@ function Home() {
         </div>
       </a>
 
-      <a href="/dateselectionpage" style={{color:"inherit", textDecoration:"none" }} >
+      <a href="/mealOverviewPage" style={{color:"inherit", textDecoration:"none" }} >
         <div class="col">
 
           <div class="card h-100 shadow flex-row" >
@@ -188,7 +188,7 @@ function Home() {
     
     
     
-      <a href="/dateselectionpage" style={{color:"inherit", textDecoration:"none" }} >
+      <a href="/mealOverviewPage" style={{color:"inherit", textDecoration:"none" }} >
         <div class="col">
           <div class="card h-100 shadow flex-row text-start" >
 
@@ -273,26 +273,7 @@ function Home() {
             
             
             
-            
-            
-            
-            
-             <nav class="navbar bg-white fixed-top rounded-pill py-4 shadow">
-              
-        <div class="container d-flex justify-content-around">
-          <a class="navbar-brand" href="/">
-            <img src="https://cdn.glitch.global/0c15c725-e764-4776-a32b-28fdb0e82a47/pngwing.com%20(4).png?v=1656781464561" alt="" width="40" height="40"></img>
-          </a>
-           <a class="navbar-brand" href="/about">
-          </a>
-           <a class="navbar-brand" href="/MensaSelectionPage">
-          </a>
-           <a class="navbar-brand" href="/">
-            <img src="https://cdn.glitch.global/0c15c725-e764-4776-a32b-28fdb0e82a47/bell_orange.png?v=1656865820884" alt="" width="24" height="24"></img>
-          </a>
-        </div>  
-                
-      </nav>
+          
             
             
             

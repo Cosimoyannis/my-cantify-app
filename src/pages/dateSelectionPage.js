@@ -26,7 +26,7 @@ return (
        
 	<div class="">
 
-	<h1 class=" fs-1">Wähle das Datum</h1>
+	<h1 class="" style={{fontSize:"23pt"}}>Wähle das Datum</h1>
 	<h5 class="text-muted fs-6 fw-light">an dem du essen gehen möchtest</h5>
 
 

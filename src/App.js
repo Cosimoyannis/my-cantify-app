@@ -5,6 +5,8 @@ import Welcomepage from './pages/welcomePage';
 import NavbarTop from './components/navbarTop';
 import DateSelectionPage from './pages/dateSelectionPage';
 import MealSelectionPage from './pages/mealSelectionPage';
+import NavbarTopWithCart from './components/narbarTopWithCart';
+import MealOverviewPage from './pages/mealOverviewPage';
 
 function App() {
   return (
@@ -29,10 +31,18 @@ function App() {
         </Route>
 
         <Route exact path="/mealSelectionPage">
-          <NavbarTop />
+          <NavbarTopWithCart />
           <MealSelectionPage />
           <Navbar />
         </Route>
+
+        <Route exact path="/mealOverviewPage">
+          <NavbarTopWithCart />
+          <MealOverviewPage />
+          <Navbar />
+        </Route>
+
+        
         
       </Switch>
      </div>
