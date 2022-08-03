@@ -1,7 +1,6 @@
 import React, {useState, useEffect } from "react"
 import axios from "axios"
 import DateSelectionPage from "./dateSelectionPage"
-import VisitorChart from "../components/visitorChart"
 
 
 function Home() {
