@@ -31,7 +31,7 @@ const MealOverviewPage = () => {
     return (
         <body  style={mystyle} class="">
         
-        <div class="card rounded-5" style={{width: "100vw", height: "150vh", marginTop:"30vh"}}>
+        <div class="card rounded-5" style={{width: "100vw", height: "150vh", marginTop:"30vh", zIndex:"2"}}>
 
         <div class="card-head mx-auto">
 
