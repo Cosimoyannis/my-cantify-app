@@ -7,6 +7,10 @@ import DateSelectionPage from './pages/dateSelectionPage';
 import MealSelectionPage from './pages/mealSelectionPage';
 import NavbarTopWithCart from './components/narbarTopWithCart';
 import MealOverviewPage from './pages/mealOverviewPage';
+import PaymentPage from './pages/paymentPage';
+import NavbarTopTransparent from './components/navbarTopTransparent';
+import NavbarTopTransparentWhite from './components/navbarTopTransparentWhite';
+import ShoppingCartPage from './pages/shoppingCartPage';
 
 function App() {
   return (
@@ -37,11 +41,22 @@ function App() {
         </Route>
 
         <Route exact path="/mealOverviewPage">
-          <NavbarTopWithCart />
+          <NavbarTopTransparentWhite />
           <MealOverviewPage />
           <Navbar />
         </Route>
 
+        <Route exact path="/paymentPage">
+          <NavbarTopTransparent />
+          <PaymentPage />
+          <Navbar />
+        </Route>
+
+        <Route exact path="/shoppingCartPage">
+          <NavbarTopTransparent />
+          <ShoppingCartPage />
+          <Navbar />
+        </Route>
         
         
       </Switch>

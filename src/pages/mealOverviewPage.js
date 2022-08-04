@@ -6,6 +6,13 @@ const MealOverviewPage = () => {
     const burgericon = require('../images/burgericon.png');
     const facts = require('../images/facts.png');
 
+
+
+
+
+
+
+
     const mystyle = {
 
         backgroundPosition: 'center',
@@ -17,8 +24,6 @@ const MealOverviewPage = () => {
             overflowX: "hidden",
             margin:"0", 
             padding:"0",
-        
-
         
       };
 
@@ -38,6 +43,7 @@ const MealOverviewPage = () => {
 
 
 
+
         <div class="d-flex justify-content-around mb-4">
 
         <h1 class="my-auto mb-1"> Cheeseburger </h1>
@@ -48,6 +54,7 @@ const MealOverviewPage = () => {
         </h4>
 
         </div>
+
 
 
 
@@ -67,13 +74,14 @@ const MealOverviewPage = () => {
 
 
 
+
         <div class="d-flex justify-content-evenly mt-5">
 
-        <h1 href="/home" class="btn btn-outline-secondary rounded-pill shadow fs-5"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-dash me-2" viewBox="0 0 16 16">
+        <button id="btn" href="/home" class="btn btn-outline-secondary rounded-pill shadow fs-5"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-dash me-2" viewBox="0 0 16 16">
         <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
         </svg> 1 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-plus ms-2" viewBox="0 0 16 16">
         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-        </svg> </h1>
+        </svg> </button>
 
         <h1 class="mt-1"> 10.98€ <a class="fs-5 text-muted fw-light" style={{color:"inherit", textDecoration:"none" }}>/a piece</a> </h1>
 
@@ -84,7 +92,7 @@ const MealOverviewPage = () => {
 
         <div class="d-flex justify-content-evenly mt-5">
 
-        <a href="/home" class="btn btn-warning rounded-pill col-9">Add to cart</a>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#modal" class="btn btn-warning rounded-pill col-9">Add to cart</button>
 
         </div>
 
@@ -96,6 +104,28 @@ const MealOverviewPage = () => {
         <img class="mb-2 me-3" src={facts} style={{}} alt="" width="100%"></img>
 
         </div>
+
+
+        <div class="modal" tabindex="-1" id="modal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+      <h1 class="modal-title text-center mb-4">Success!</h1>
+
+        <p>Du hast 2x Pizza Magharita deinem 
+            Warenkorb hinzugefügt. 
+        </p>
+      </div>
+      <div class="modal-footer mx-auto">
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Go to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
