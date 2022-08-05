@@ -39,8 +39,8 @@ const Welcomepage = () => {
 
 
         <div class="d-grid gap-2 col-8 mx-auto ">
-        <a href="/home" class="btn btn-warning rounded-pill">Log in</a>
-        <a href="/home" class="btn btn-warning rounded-pill">Register</a>
+        <a href="/loginPage" class="btn btn-warning rounded-pill">Log in</a>
+        <a href="/loginPage" class="btn btn-warning rounded-pill">Register</a>
         </div>
 
        

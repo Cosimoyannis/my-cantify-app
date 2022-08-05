@@ -33,7 +33,7 @@ const PaymentPage = () => {
     return (
         <body  style={mystyle} class="">
         
-        <div class="card rounded-5" style={{width: "100vw", height: "130vh", marginTop:"10vh", zIndex:"2"}}>
+        <div class="card rounded-5" style={{width: "100vw", height: "145vh", marginTop:"10vh"}}>
 
         
         
@@ -50,21 +50,21 @@ const PaymentPage = () => {
 
         <div class="d-flex justify-content-around mb-4">
 
-        <div class="card shadow">
+        <div class="card shadow me-3 ms-3">
         <div class="card-body">
-        <img class="me-3 ms-3 mt-1" src={paypal} style={{}} alt="" width="70"></img>
+        <img class="mt-1" src={paypal} style={{}} alt="" width="50"></img>
         </div>
         </div>
 
-        <div class="card shadow">
+        <div class="card shadow me-3 ms-3">
         <div class="card-body">
-        <img class="me-3 ms-3" src={card} style={{}} alt="" width="70"></img>
+        <img class="" src={card} style={{}} alt="" width="50"></img>
         </div>
         </div>
 
-        <div class="card shadow">
+        <div class="card shadow me-3 ms-3">
         <div class="card-body">
-        <img class="me-3 ms-3 mt-1" src={applepay} style={{}} alt="" width="70"></img>
+        <img class="mt-1" src={applepay} style={{}} alt="" width="50"></img>
         </div>
         </div>
 
@@ -84,7 +84,7 @@ const PaymentPage = () => {
 
         <div class="d-flex justify-content-evenly mt-5">
 
-        <img class="me-3 ms-3" src={creditcards} style={{}} alt="" width="400"></img>
+        <img class="me-3 ms-3 mb-5" src={creditcards} style={{}} alt="" width="300"></img>
 
         </div>
 
@@ -131,7 +131,7 @@ const PaymentPage = () => {
 
 
 
-        <nav class="bg-white fixed-bottom border-top border-3 border-dark" style={{height:"37vh"}}>
+        <nav class="bg-white fixed-bottom border-top border-3 border-dark" style={{height:"40vh"}}>
 
               
         <div class="d-flex justify-content-between mt-5 me-5 ms-5">

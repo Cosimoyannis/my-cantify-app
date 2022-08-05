@@ -20,7 +20,6 @@ const MealOverviewPage = () => {
         backgroundRepeat: 'no-repeat',
         height: '100vh',
         backgroundImage: `url(${img})`,
-    
             overflowX: "hidden",
             margin:"0", 
             padding:"0",
@@ -31,7 +30,7 @@ const MealOverviewPage = () => {
     return (
         <body  style={mystyle} class="">
         
-        <div class="card rounded-5" style={{width: "100vw", height: "150vh", marginTop:"30vh", zIndex:"2"}}>
+        <div class="card rounded-5" style={{width: "100vw", height: "150vh", marginTop:"30vh", zIndex:""}}>
 
         <div class="card-head mx-auto">
 

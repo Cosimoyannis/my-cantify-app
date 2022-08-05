@@ -2,7 +2,7 @@
 const NavbarTopTransparentWhite = () => {
     return (
 
-        <nav class="navbar bg-transparent fixed-top rounded-pill py-4" style={{zIndex:"1"}}>
+        <nav class="navbar bg-transparent fixed-top rounded-pill py-4" style={{zIndex:"-1"}}>
           
         <div class="container d-flex justify-content-around">
 

@@ -70,7 +70,7 @@ const ad2 = require('../images/ad2.png');
             return (
         <body  style={mystyle} class="">
         
-        <div class="card rounded-5" style={{width: "100vw", height: "115vh", marginTop:"10vh", zIndex:"2"}}>
+        <div class="card rounded-5" style={{width: "100vw", height: "300vh", marginTop:"10vh"}}>
 
         
         
@@ -272,7 +272,7 @@ const ad2 = require('../images/ad2.png');
 
 
 
-        <nav class="bg-white fixed-bottom border-top border-3 border-dark" style={{height:"37vh"}}>
+        <nav class="bg-white fixed-bottom border-top border-3 border-dark" style={{height:"45vh"}}>
 
               
         <div class="d-flex justify-content-between mt-5 me-5 ms-5">
