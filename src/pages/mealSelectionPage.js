@@ -61,7 +61,7 @@ function Home() {
 
             <div class="card-body col align-self-center" style={{marginLeft: "5vw"}}>
               <h5 class="card-title " style={{color: "#C65A39"}}><b>Today is <br />Pizza-Day!</b></h5>
-              <h5 class=" fw-light fs-6"> Enter the code PIZZA <br /> at checkout and <br />save 10% </h5>
+              <h5 class=" fw-light fs-6"> Enter the code <b><i>PIZZA</i></b> <br /> at checkout and <br />save 10% </h5>
               
             </div>
         

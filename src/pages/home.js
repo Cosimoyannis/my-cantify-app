@@ -318,7 +318,7 @@ if(users){
          <nav class="navbar bg-white fixed-top rounded-pill py-4 shadow">
           
     <div class="container d-flex justify-content-around">
-      <a class="navbar-brand" href="/">
+      <a class="navbar-brand" href="/profileSettings">
         <img src="https://cdn.glitch.global/0c15c725-e764-4776-a32b-28fdb0e82a47/pngwing.com%20(4).png?v=1656781464561" alt="" width="40" height="40"></img>
       </a>
        <a class="navbar-brand" href="/about">

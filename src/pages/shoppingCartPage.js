@@ -1,6 +1,7 @@
 import React, {useState, useEffect } from "react"
 import axios from "axios"
 import DateSelectionPage from "./dateSelectionPage"
+import { display } from "@mui/system";
 
 
 
@@ -39,6 +40,7 @@ const ad2 = require('../images/ad2.png');
 
 
 
+
     const mystyle = {
 
         height: '100vh',
@@ -52,11 +54,34 @@ const ad2 = require('../images/ad2.png');
 
       function ShoppingCartPage() {
 
- 
+        
         const url ='https://jsonplaceholder.typicode.com/users'
         const [users, setUsers] = useState(null)
+
         
+        const [navbar, setNavbar] = useState(false)
+  
+        const changeNavbar = () => {
+          if (window.scrollY >= 40 ) {
+            setNavbar(true);
+          } else {
+            setNavbar(false);
+          }
+        };
+
+        window.addEventListener('scroll', changeNavbar);
+
+
+
+    
+
+
+
         useEffect(() => {
+
+          
+
+
         
           axios.get(url).then(response => {
             setUsers(response.data)
@@ -272,7 +297,7 @@ const ad2 = require('../images/ad2.png');
 
 
 
-        <nav class="bg-white fixed-bottom border-top border-3 border-dark" style={{height:"45vh"}}>
+        <nav class= "bg-white fixed-bottom border-top border-3 border-dark"  style={navbar ? {height:"1vh"} : {height:"42vh"} }>
 
               
         <div class="d-flex justify-content-between mt-5 me-5 ms-5">
@@ -308,13 +333,10 @@ const ad2 = require('../images/ad2.png');
     
         </div>
 
-
-
-
-
                 
          </nav>
 
+        
 
 
     

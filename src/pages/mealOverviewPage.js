@@ -98,7 +98,7 @@ const MealOverviewPage = () => {
 
 
 
-        <div class="d-flex justify-content-evenly mt-5">
+        <div class="d-flex justify-content-center mt-5">
 
         <img class="mb-2 me-3" src={facts} style={{}} alt="" width="100%"></img>
 

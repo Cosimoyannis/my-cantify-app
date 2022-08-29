@@ -12,6 +12,8 @@ import NavbarTopTransparent from './components/navbarTopTransparent';
 import NavbarTopTransparentWhite from './components/navbarTopTransparentWhite';
 import ShoppingCartPage from './pages/shoppingCartPage';
 import LoginPage from './pages/loginPage';
+import ProfileSettings from './pages/profileSettings';
+import AllOrdersPage from './pages/allOrdersPage';
 
 function App() {
   return (
@@ -57,6 +59,16 @@ function App() {
 
         <Route exact path="/shoppingCartPage">
           <ShoppingCartPage />
+          <Navbar />
+        </Route>
+
+        <Route exact path="/profileSettings">
+          <ProfileSettings />
+          <Navbar />
+        </Route>
+
+        <Route exact path="/allOrdersPage">
+          <AllOrdersPage />
           <Navbar />
         </Route>
 
