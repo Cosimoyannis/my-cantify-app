@@ -19,7 +19,6 @@ function ProfileSettings() {
 return (
 
 
-
     
 <body  style={mystyle} class="row align-items-center">
         
