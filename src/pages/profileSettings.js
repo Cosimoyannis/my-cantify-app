@@ -11,41 +11,41 @@ function ProfileSettings() {
   };
 
   return (
-    <body style={mystyle} class="row align-items-center">
-      <div class="d-grid gap-2 col-8 mx-auto mb-5 opacity-0">
-        <h1 class="mx-auto" style={{ fontSize: "23pt" }}></h1>
+    <div style={mystyle} className="row align-items-center">
+      <div className="d-grid gap-2 col-8 mx-auto mb-5 opacity-0">
+        <h1 className="mx-auto" style={{ fontSize: "23pt" }}></h1>
       </div>
 
-      <div class="d-grid gap-2 col-8 mx-auto mb-5 opacity-0">
-        <h1 class="mx-auto" style={{ fontSize: "23pt" }}></h1>
+      <div className="d-grid gap-2 col-8 mx-auto mb-5 opacity-0">
+        <h1 className="mx-auto" style={{ fontSize: "23pt" }}></h1>
       </div>
 
-      <div class="d-grid gap-2 col-8 mx-auto mt-5 text-muted">
-        <h1 class="mx-auto" style={{ fontSize: "23pt" }}>
+      <div className="d-grid gap-2 col-8 mx-auto mt-5 text-muted">
+        <h1 className="mx-auto" style={{ fontSize: "23pt" }}>
           Bestellungen
         </h1>
       </div>
 
-      <div class="d-grid gap-2 col-8 mx-auto text-muted">
-        <h1 class="mx-auto" style={{ fontSize: "23pt" }}>
+      <div className="d-grid gap-2 col-8 mx-auto text-muted">
+        <h1 className="mx-auto" style={{ fontSize: "23pt" }}>
           Profil
         </h1>
       </div>
 
-      <div class="d-grid gap-2 col-8 mx-auto mb-5 text-muted">
-        <h1 class="mx-auto" style={{ fontSize: "23pt" }}>
+      <div className="d-grid gap-2 col-8 mx-auto mb-5 text-muted">
+        <h1 className="mx-auto" style={{ fontSize: "23pt" }}>
           Einstellungen
         </h1>
       </div>
 
-      <div class="d-grid gap-2 col-8 mx-auto mb-5 opacity-0">
-        <h1 class="mx-auto" style={{ fontSize: "23pt" }}></h1>
+      <div className="d-grid gap-2 col-8 mx-auto mb-5 opacity-0">
+        <h1 className="mx-auto" style={{ fontSize: "23pt" }}></h1>
       </div>
 
-      <div class="d-grid gap-2 col-8 mx-auto mb-5 opacity-0">
-        <h1 class="mx-auto" style={{ fontSize: "23pt" }}></h1>
+      <div className="d-grid gap-2 col-8 mx-auto mb-5 opacity-0">
+        <h1 className="mx-auto" style={{ fontSize: "23pt" }}></h1>
       </div>
-    </body>
+    </div>
   );
 }
 

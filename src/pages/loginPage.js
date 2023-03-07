@@ -11,32 +11,32 @@ const loginPage = () => {
   };
 
   return (
-    <body style={mystyle} class="row align-items-center">
-      <div class="d-flex justify-content-center">
+    <div style={mystyle} className="row align-items-center">
+      <div className="d-flex justify-content-center">
         <img src={logo} alt="" width="150" height="150"></img>
       </div>
 
-      <div class="d-grid gap-2 col-8 mx-auto ">
-        <h1 class="mx-auto" style={{ fontSize: "23pt" }}>
+      <div className="d-grid gap-2 col-8 mx-auto ">
+        <h1 className="mx-auto" style={{ fontSize: "23pt" }}>
           Welcome back!
         </h1>
-        <h5 class="text-muted fs-4 fw-light mx-auto">Login to continue</h5>
+        <h5 className="text-muted fs-4 fw-light mx-auto">Login to continue</h5>
       </div>
 
-      <div class="d-grid gap-2 col-8 mx-auto ">
-        <div class="form-group mb-2">
+      <div className="d-grid gap-2 col-8 mx-auto ">
+        <div className="form-group mb-2">
           <input
             type="email"
-            class="form-control rounded-pill shadow"
+            className="form-control rounded-pill shadow"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
             placeholder="Email"
           ></input>
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <input
             type="email"
-            class="form-control rounded-pill shadow"
+            className="form-control rounded-pill shadow"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
             placeholder="Password"
@@ -44,12 +44,12 @@ const loginPage = () => {
         </div>
       </div>
 
-      <div class="d-grid gap-2 col-8 mx-auto ">
-        <a href="/home" class="btn btn-warning rounded-pill shadow">
+      <div className="d-grid gap-2 col-8 mx-auto ">
+        <a href="/home" className="btn btn-warning rounded-pill shadow">
           Log in
         </a>
       </div>
-    </body>
+    </div>
   );
 };
 

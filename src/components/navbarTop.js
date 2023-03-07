@@ -1,14 +1,14 @@
 const NavbarTop = () => {
   return (
-    <nav class="navbar bg-white fixed-top rounded-pill py-4 shadow">
-      <div class="container d-flex justify-content-around">
-        <a class="navbar-brand" href="/">
+    <nav className="navbar bg-white fixed-top rounded-pill py-4 shadow">
+      <div className="container d-flex justify-content-around">
+        <a className="navbar-brand" href="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
             height="20"
             fill="green"
-            class="bi bi-chevron-left"
+            className="bi bi-chevron-left"
             viewBox="0 0 16 16"
           >
             <path
@@ -17,9 +17,9 @@ const NavbarTop = () => {
             />
           </svg>
         </a>
-        <a class="navbar-brand" href="/about"></a>
-        <a class="navbar-brand" href="/MensaSelectionPage"></a>
-        <a class="navbar-brand" href="/">
+        <a className="navbar-brand" href="/about"></a>
+        <a className="navbar-brand" href="/MensaSelectionPage"></a>
+        <a className="navbar-brand" href="/">
           <img
             src="https://cdn.glitch.global/0c15c725-e764-4776-a32b-28fdb0e82a47/bell_orange.png?v=1656865820884"
             alt=""

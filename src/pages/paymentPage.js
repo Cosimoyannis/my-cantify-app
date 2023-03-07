@@ -19,21 +19,21 @@ const PaymentPage = () => {
   };
 
   return (
-    <body style={mystyle} class="">
+    <div style={mystyle} className="">
       <div
-        class="card rounded-5"
+        className="card rounded-5"
         style={{ width: "100vw", height: "145vh", marginTop: "10vh" }}
       >
-        <div class="card-body">
-          <div class="mb-4 ms-3 mt-3">
+        <div className="card-body">
+          <div className="mb-4 ms-3 mt-3">
             <h1>Checkout</h1>
           </div>
 
-          <div class="d-flex justify-content-around mb-4">
-            <div class="card shadow me-3 ms-3">
-              <div class="card-body">
+          <div className="d-flex justify-content-around mb-4">
+            <div className="card shadow me-3 ms-3">
+              <div className="card-body">
                 <img
-                  class="mt-1"
+                  className="mt-1"
                   src={paypal}
                   style={{}}
                   alt=""
@@ -42,16 +42,16 @@ const PaymentPage = () => {
               </div>
             </div>
 
-            <div class="card shadow me-3 ms-3">
-              <div class="card-body">
-                <img class="" src={card} style={{}} alt="" width="50"></img>
+            <div className="card shadow me-3 ms-3">
+              <div className="card-body">
+                <img className="" src={card} style={{}} alt="" width="50"></img>
               </div>
             </div>
 
-            <div class="card shadow me-3 ms-3">
-              <div class="card-body">
+            <div className="card shadow me-3 ms-3">
+              <div className="card-body">
                 <img
-                  class="mt-1"
+                  className="mt-1"
                   src={applepay}
                   style={{}}
                   alt=""
@@ -61,13 +61,13 @@ const PaymentPage = () => {
             </div>
           </div>
 
-          <div class="mb-4 ms-3">
+          <div className="mb-4 ms-3">
             <h1>Saved Cards</h1>
           </div>
 
-          <div class="d-flex justify-content-evenly mt-5">
+          <div className="d-flex justify-content-evenly mt-5">
             <img
-              class="me-3 ms-3 mb-5"
+              className="me-3 ms-3 mb-5"
               src={creditcards}
               style={{}}
               alt=""
@@ -75,13 +75,13 @@ const PaymentPage = () => {
             ></img>
           </div>
 
-          <div class="card shadow mt-4 me-4 ms-4">
-            <div class="card-body">
-              <h1 class="fs-5">Card Number</h1>
-              <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">
+          <div className="card shadow mt-4 me-4 ms-4">
+            <div className="card-body">
+              <h1 className="fs-5">Card Number</h1>
+              <div className="input-group mb-3">
+                <span className="input-group-text" id="basic-addon1">
                   <img
-                    class="me-3 ms-3"
+                    className="me-3 ms-3"
                     src={visa}
                     style={{}}
                     alt=""
@@ -90,42 +90,42 @@ const PaymentPage = () => {
                 </span>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   placeholder=""
                   aria-label="Username"
                   aria-describedby="basic-addon1"
                 ></input>
               </div>
 
-              <h1 class="fs-5">Name on Card</h1>
+              <h1 className="fs-5">Name on Card</h1>
 
-              <div class="input-group mb-3">
+              <div className="input-group mb-3">
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Vornamen"
                   aria-label="Username"
                 ></input>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Nachname"
                   aria-label="Server"
                 ></input>
               </div>
 
-              <h1 class="fs-5">Exp Date</h1>
+              <h1 className="fs-5">Exp Date</h1>
 
-              <div class="input-group mb-3">
+              <div className="input-group mb-3">
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Date"
                   aria-label="Username"
                 ></input>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   placeholder="CCV"
                   aria-label="Server"
                 ></input>
@@ -133,13 +133,13 @@ const PaymentPage = () => {
             </div>
           </div>
 
-          <div class="card shadow mt-4 me-4 ms-4">
-            <div class="card-body">
-              <h1 class="fs-5 mt-1 text-center">Promotion Code</h1>
-              <div class="mb-3 me-5 ms-5">
+          <div className="card shadow mt-4 me-4 ms-4">
+            <div className="card-body">
+              <h1 className="fs-5 mt-1 text-center">Promotion Code</h1>
+              <div className="mb-3 me-5 ms-5">
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Code"
                   aria-label="Username"
                   aria-describedby="basic-addon1"
@@ -149,61 +149,61 @@ const PaymentPage = () => {
           </div>
 
           <nav
-            class="bg-white fixed-bottom border-top border-3 border-dark"
+            className="bg-white fixed-bottom border-top border-3 border-dark"
             style={{ height: "40vh" }}
           >
-            <div class="d-flex justify-content-between mt-5 me-5 ms-5">
-              <h4 class="text-muted fw-light fs-5"> Subtotals: </h4>
+            <div className="d-flex justify-content-between mt-5 me-5 ms-5">
+              <h4 className="text-muted fw-light fs-5"> Subtotals: </h4>
 
-              <h4 class="text-muted fw-light fs-5"> 8.99€ </h4>
+              <h4 className="text-muted fw-light fs-5"> 8.99€ </h4>
             </div>
 
-            <div class="d-flex justify-content-between  me-5 ms-5">
-              <h4 class="text-muted fw-light fs-5"> Discount: </h4>
+            <div className="d-flex justify-content-between  me-5 ms-5">
+              <h4 className="text-muted fw-light fs-5"> Discount: </h4>
 
-              <h4 class="text-muted fw-light fs-5"> 0.99€ </h4>
+              <h4 className="text-muted fw-light fs-5"> 0.99€ </h4>
             </div>
 
-            <div class="d-flex justify-content-between mt-3 me-5 ms-5">
-              <h4 class="fs-1"> Total: </h4>
+            <div className="d-flex justify-content-between mt-3 me-5 ms-5">
+              <h4 className="fs-1"> Total: </h4>
 
-              <h4 class="fs-1"> 8.00€ </h4>
+              <h4 className="fs-1"> 8.00€ </h4>
             </div>
 
-            <div class="d-flex justify-content-center mt-4">
+            <div className="d-flex justify-content-center mt-4">
               <button
                 type="button"
                 data-bs-toggle="modal"
                 data-bs-target="#modal"
-                class="btn btn-warning rounded-pill col-9 shadow"
+                className="btn btn-warning rounded-pill col-9 shadow"
               >
                 Confirm Order
               </button>
             </div>
           </nav>
 
-          <div class="modal" tabindex="-1" id="modal">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
+          <div className="modal" tabindex="-1" id="modal">
+            <div className="modal-dialog modal-dialog-centered">
+              <div className="modal-content">
+                <div className="modal-header">
                   <button
                     type="button"
-                    class="btn-close"
+                    className="btn-close"
                     data-bs-dismiss="modal"
                     aria-label="Close"
                   ></button>
                 </div>
-                <div class="modal-body">
-                  <h1 class="modal-title text-center mb-4">Success!</h1>
+                <div className="modal-body">
+                  <h1 className="modal-title text-center mb-4">Success!</h1>
 
                   <p>
                     Du hast 2x Pizza Magharita deinem Warenkorb hinzugefügt.
                   </p>
                 </div>
-                <div class="modal-footer mx-auto">
+                <div className="modal-footer mx-auto">
                   <button
                     type="button"
-                    class="btn btn-warning"
+                    className="btn btn-warning"
                     data-bs-dismiss="modal"
                   >
                     Go to cart
@@ -214,7 +214,7 @@ const PaymentPage = () => {
           </div>
         </div>
       </div>
-    </body>
+    </div>
   );
 };
 

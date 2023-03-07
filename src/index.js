@@ -3,6 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import MensaCard from "./components/mensaCard";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -23,6 +24,8 @@ request.onerror = (event) => {
 };
 request.onsuccess = (event) => {
   db = event.target.result;
+
+  console.log("success");
 };
 
 /**
@@ -32,29 +35,37 @@ request.onsuccess = (event) => {
 request.onupgradeneeded = (event) => {
   // Save the IDBDatabase interface
   const upgradeDB = event.target.result;
+  
+  upgradeDB.createObjectStore("mensen", { keyPath: "id" });
 
-  /**
-   *  @type {IDBObjectStore}
-   */
-  const mensenStore = upgradeDB.createObjectStore("mensen", { keyPath: "id" });
-
-  insertMensaData(this);
+  insertMensaData();
 };
 
-/**
- *
- * @param {IDBOpenDBRequest} mensenStore
- */
-async function insertMensaData(mensenStore) {
-  const request = await axios.get("https://openmensa.org/api/v2/canteens/");
-  if (request.status !== 200) {
+async function insertMensaData() {
+  const req = await axios.get("https://openmensa.org/api/v2/canteens/");
+  if (req.status !== 200) {
     return;
   }
 
   const tx = db.transaction("mensen", "readwrite");
-  var store = tx.objectStore("mensen");
+  let store = tx.objectStore("mensen");
 
-  for (const entry of request.data) {
+  for (const entry of req.data) {
     store.add(entry);
   }
+}
+
+export async function getMensen() {
+  if (db === undefined) return;
+  /**
+   *  @type {IDBTransaction}
+   */
+  const tx = db.transaction("mensen", "readonly");
+  let store = tx.objectStore("mensen");
+  const req = store.getAll()
+  return new Promise((resolve, reject) => {
+    req.onsuccess = event => {
+      resolve(req.result)
+    }    
+  })
 }

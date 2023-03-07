@@ -53,18 +53,18 @@ function ShoppingCartPage() {
 
   if (users) {
     return (
-      <body style={mystyle} class="">
+      <div style={mystyle} className="">
         <div
-          class="card rounded-5"
+          className="card rounded-5"
           style={{ width: "100vw", height: "300vh", marginTop: "10vh" }}
         >
-          <div class="card-body">
-            <div class="mb-4 ms-3 mt-3">
+          <div className="card-body">
+            <div className="mb-4 ms-3 mt-3">
               <h1>Your Shopping Cart</h1>
             </div>
 
             <div
-              class="row row-cols-1 row-cols-md-3 g-4 mt-4 mb-4 px-2"
+              className="row row-cols-1 row-cols-md-3 g-4 mt-4 mb-4 px-2"
               style={{
                 overflowX: "hidden",
                 height: "100wh",
@@ -76,10 +76,10 @@ function ShoppingCartPage() {
                 href="/mealOverviewPage"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
-                <div class="col">
-                  <div class="card h-100 shadow flex-row text-start">
+                <div className="col">
+                  <div className="card h-100 shadow flex-row text-start">
                     <img
-                      class="col align-self-center"
+                      className="col align-self-center"
                       src={burger}
                       style={{ marginLeft: "5vw" }}
                       alt=""
@@ -88,13 +88,13 @@ function ShoppingCartPage() {
                     ></img>
 
                     <div
-                      class="card-body col align-self-center"
+                      className="card-body col align-self-center"
                       style={{ marginLeft: "5vw" }}
                     >
-                      <h5 class="card-title">
+                      <h5 className="card-title">
                         <b>{users[1].name}</b>
                       </h5>
-                      <h5 class="text-muted fw-light fs-6">
+                      <h5 className="text-muted fw-light fs-6">
                         {" "}
                         16 left |{" "}
                         <svg
@@ -103,7 +103,7 @@ function ShoppingCartPage() {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-star"
+                          className="bi bi-star"
                           viewBox="0 0 16 16"
                         >
                           <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
@@ -113,14 +113,14 @@ function ShoppingCartPage() {
                       <h5>10.99€</h5>
                     </div>
 
-                    <div class="align-self-end">
+                    <div className="align-self-end">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         style={{ marginBottom: "2vw", marginRight: "2vw" }}
                         width="20"
                         height="20"
                         fill="orange"
-                        class="bi bi-heart-fill"
+                        className="bi bi-heart-fill"
                         viewBox="0 0 16 16"
                       >
                         <path
@@ -137,10 +137,10 @@ function ShoppingCartPage() {
                 href="/mealOverviewPage"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
-                <div class="col">
-                  <div class="card h-100 shadow flex-row">
+                <div className="col">
+                  <div className="card h-100 shadow flex-row">
                     <img
-                      class="col align-self-center"
+                      className="col align-self-center"
                       src={pizza}
                       style={{ marginLeft: "5vw" }}
                       alt=""
@@ -149,13 +149,13 @@ function ShoppingCartPage() {
                     ></img>
 
                     <div
-                      class="card-body col align-self-center"
+                      className="card-body col align-self-center"
                       style={{ marginLeft: "5vw" }}
                     >
-                      <h5 class="card-title">
+                      <h5 className="card-title">
                         <b>{users[1].name}</b>
                       </h5>
-                      <h5 class="text-muted fw-light fs-6">
+                      <h5 className="text-muted fw-light fs-6">
                         {" "}
                         16 left |{" "}
                         <svg
@@ -164,7 +164,7 @@ function ShoppingCartPage() {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-star"
+                          className="bi bi-star"
                           viewBox="0 0 16 16"
                         >
                           <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
@@ -174,14 +174,14 @@ function ShoppingCartPage() {
                       <h5>10.99€</h5>
                     </div>
 
-                    <div class="align-self-end">
+                    <div className="align-self-end">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         style={{ marginBottom: "2vw", marginRight: "2vw" }}
                         width="20"
                         height="20"
                         fill="orange"
-                        class="bi bi-heart-fill"
+                        className="bi bi-heart-fill"
                         viewBox="0 0 16 16"
                       >
                         <path
@@ -198,10 +198,10 @@ function ShoppingCartPage() {
                 href="/mealOverviewPage"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
-                <div class="col">
-                  <div class="card h-100 shadow flex-row text-start">
+                <div className="col">
+                  <div className="card h-100 shadow flex-row text-start">
                     <img
-                      class="col align-self-center"
+                      className="col align-self-center"
                       src={burger}
                       style={{ marginLeft: "5vw" }}
                       alt=""
@@ -210,13 +210,13 @@ function ShoppingCartPage() {
                     ></img>
 
                     <div
-                      class="card-body col align-self-center"
+                      className="card-body col align-self-center"
                       style={{ marginLeft: "5vw" }}
                     >
-                      <h5 class="card-title">
+                      <h5 className="card-title">
                         <b>{users[1].name}</b>
                       </h5>
-                      <h5 class="text-muted fw-light fs-6">
+                      <h5 className="text-muted fw-light fs-6">
                         {" "}
                         16 left |{" "}
                         <svg
@@ -225,7 +225,7 @@ function ShoppingCartPage() {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-star"
+                          className="bi bi-star"
                           viewBox="0 0 16 16"
                         >
                           <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
@@ -235,14 +235,14 @@ function ShoppingCartPage() {
                       <h5>10.99€</h5>
                     </div>
 
-                    <div class="align-self-end">
+                    <div className="align-self-end">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         style={{ marginBottom: "2vw", marginRight: "2vw" }}
                         width="20"
                         height="20"
                         fill="orange"
-                        class="bi bi-heart-fill"
+                        className="bi bi-heart-fill"
                         viewBox="0 0 16 16"
                       >
                         <path
@@ -259,10 +259,10 @@ function ShoppingCartPage() {
                 href="/mealOverviewPage"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
-                <div class="col">
-                  <div class="card h-100 shadow flex-row">
+                <div className="col">
+                  <div className="card h-100 shadow flex-row">
                     <img
-                      class="col align-self-center"
+                      className="col align-self-center"
                       src={pizza}
                       style={{ marginLeft: "5vw" }}
                       alt=""
@@ -271,13 +271,13 @@ function ShoppingCartPage() {
                     ></img>
 
                     <div
-                      class="card-body col align-self-center"
+                      className="card-body col align-self-center"
                       style={{ marginLeft: "5vw" }}
                     >
-                      <h5 class="card-title">
+                      <h5 className="card-title">
                         <b>{users[1].name}</b>
                       </h5>
-                      <h5 class="text-muted fw-light fs-6">
+                      <h5 className="text-muted fw-light fs-6">
                         {" "}
                         16 left |{" "}
                         <svg
@@ -286,7 +286,7 @@ function ShoppingCartPage() {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-star"
+                          className="bi bi-star"
                           viewBox="0 0 16 16"
                         >
                           <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
@@ -296,14 +296,14 @@ function ShoppingCartPage() {
                       <h5>10.99€</h5>
                     </div>
 
-                    <div class="align-self-end">
+                    <div className="align-self-end">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         style={{ marginBottom: "2vw", marginRight: "2vw" }}
                         width="20"
                         height="20"
                         fill="orange"
-                        class="bi bi-heart-fill"
+                        className="bi bi-heart-fill"
                         viewBox="0 0 16 16"
                       >
                         <path
@@ -324,59 +324,59 @@ function ShoppingCartPage() {
             </div>
 
             <nav
-              class="bg-white fixed-bottom border-top border-3 border-dark"
+              className="bg-white fixed-bottom border-top border-3 border-dark"
               style={navbar ? { height: "1vh" } : { height: "42vh" }}
             >
-              <div class="d-flex justify-content-between mt-5 me-5 ms-5">
-                <h4 class="text-muted fw-light"> Subtotals: </h4>
+              <div className="d-flex justify-content-between mt-5 me-5 ms-5">
+                <h4 className="text-muted fw-light"> Subtotals: </h4>
 
-                <h4 class="text-muted fw-light"> 8.99€ </h4>
+                <h4 className="text-muted fw-light"> 8.99€ </h4>
               </div>
 
-              <div class="d-flex justify-content-between  me-5 ms-5">
-                <h4 class="text-muted fw-light"> Discount: </h4>
+              <div className="d-flex justify-content-between  me-5 ms-5">
+                <h4 className="text-muted fw-light"> Discount: </h4>
 
-                <h4 class="text-muted fw-light"> 0.00€ </h4>
+                <h4 className="text-muted fw-light"> 0.00€ </h4>
               </div>
 
-              <div class="d-flex justify-content-between mt-3 me-5 ms-5">
-                <h4 class="fs-1"> Total: </h4>
+              <div className="d-flex justify-content-between mt-3 me-5 ms-5">
+                <h4 className="fs-1"> Total: </h4>
 
-                <h4 class="fs-1"> 8.99€ </h4>
+                <h4 className="fs-1"> 8.99€ </h4>
               </div>
 
-              <div class="d-flex justify-content-center mt-4">
+              <div className="d-flex justify-content-center mt-4">
                 <a
                   href="/paymentPage"
-                  class="btn btn-warning rounded-pill col-9 shadow"
+                  className="btn btn-warning rounded-pill col-9 shadow"
                 >
                   Checkout
                 </a>
               </div>
             </nav>
 
-            <div class="modal" tabindex="-1" id="modal">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
+            <div className="modal" tabindex="-1" id="modal">
+              <div className="modal-dialog modal-dialog-centered">
+                <div className="modal-content">
+                  <div className="modal-header">
                     <button
                       type="button"
-                      class="btn-close"
+                      className="btn-close"
                       data-bs-dismiss="modal"
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="modal-body">
-                    <h1 class="modal-title text-center mb-4">Success!</h1>
+                  <div className="modal-body">
+                    <h1 className="modal-title text-center mb-4">Success!</h1>
 
                     <p>
                       Du hast 2x Pizza Magharita deinem Warenkorb hinzugefügt.
                     </p>
                   </div>
-                  <div class="modal-footer mx-auto">
+                  <div className="modal-footer mx-auto">
                     <button
                       type="button"
-                      class="btn btn-warning"
+                      className="btn btn-warning"
                       data-bs-dismiss="modal"
                     >
                       Go to cart
@@ -387,13 +387,13 @@ function ShoppingCartPage() {
             </div>
           </div>
         </div>
-      </body>
+      </div>
     );
   }
   return (
-    <div class="d-flex justify-content-center">
-      <div class="spinner-border" role="status">
-        <span class="visually-hidden">Loading...</span>
+    <div className="d-flex justify-content-center">
+      <div className="spinner-border" role="status">
+        <span className="visually-hidden">Loading...</span>
       </div>
     </div>
   );

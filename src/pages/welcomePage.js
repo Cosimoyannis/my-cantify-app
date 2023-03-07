@@ -15,13 +15,13 @@ const Welcomepage = () => {
   };
 
   return (
-    <body style={mystyle} class="row align-items-center">
-      <div class="d-flex justify-content-center">
+    <div style={mystyle} className="row align-items-center">
+      <div className="d-flex justify-content-center">
         <img src={logo} alt="" width="150" height="150"></img>
       </div>
 
-      <div class="d-flex justify-content-center">
-        <h1 style={{ color: "white", font: "Roboto" }} class="text-center">
+      <div className="d-flex justify-content-center">
+        <h1 style={{ color: "white", font: "Roboto" }} className="text-center">
           Be a part of Cantify <br />
           spend more time with <br />
           friends and less with <br />
@@ -29,15 +29,15 @@ const Welcomepage = () => {
         </h1>
       </div>
 
-      <div class="d-grid gap-2 col-8 mx-auto ">
-        <a href="/loginPage" class="btn btn-warning rounded-pill">
+      <div className="d-grid gap-2 col-8 mx-auto ">
+        <a href="/loginPage" className="btn btn-warning rounded-pill">
           Log in
         </a>
-        <a href="/loginPage" class="btn btn-warning rounded-pill">
+        <a href="/loginPage" className="btn btn-warning rounded-pill">
           Register
         </a>
       </div>
-    </body>
+    </div>
   );
 };
 
