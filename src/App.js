@@ -53,15 +53,15 @@ function App() {
               <Navbar />
             </Route>
 
-            <Route exact path="/mealOverviewPage">
+            {/* <Route exact path="/mealOverviewPage">
               <MealOverviewPage />
               <Navbar />
-            </Route>
+            </Route> */}
 
-            <Route exact path="/paymentPage">
+            {/* <Route exact path="/paymentPage">
               <PaymentPage />
               <Navbar />
-            </Route>
+            </Route> */}
 
             <Route exact path="/shoppingCartPage">
               <ShoppingCartPage />

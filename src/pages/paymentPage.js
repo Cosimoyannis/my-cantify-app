@@ -197,7 +197,7 @@ const PaymentPage = () => {
                   <h1 className="modal-title text-center mb-4">Success!</h1>
 
                   <p>
-                    Du hast 2x Pizza Magharita deinem Warenkorb hinzugefügt.
+                    Du hast 3x Pizza Magharita deinem Warenkorb hinzugefügt.
                   </p>
                 </div>
                 <div className="modal-footer mx-auto">

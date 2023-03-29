@@ -2,7 +2,7 @@ const Navbar = () => {
   return (
     <nav className="navbar bg-white fixed-bottom rounded-pill py-4 shadow">
       <div className="container d-flex justify-content-evenly">
-        <a className="navbar-brand" href="/mealSelectionPage">
+        <a className="navbar-brand" href="/home">
           <img
             src="https://cdn.glitch.global/0c15c725-e764-4776-a32b-28fdb0e82a47/home_orange.png?v=1656865821277"
             alt=""
@@ -10,7 +10,7 @@ const Navbar = () => {
             height="30"
           ></img>
         </a>
-        <a className="navbar-brand" href="/mealSelectionPage">
+        {/* <a className="navbar-brand" href="/mealSelectionPage">
           <img
             src="https://cdn.glitch.global/0c15c725-e764-4776-a32b-28fdb0e82a47/heart_orange.png?v=1656865820935"
             alt=""
@@ -25,7 +25,7 @@ const Navbar = () => {
             width="30"
             height="30"
           ></img>
-        </a>
+        </a> */}
         <a className="navbar-brand" href="/shoppingcartPage">
           <svg
             xmlns="http://www.w3.org/2000/svg"

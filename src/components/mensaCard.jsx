@@ -12,9 +12,7 @@ const MensaCard = (props) => {
             </h5>
             <div className="d-flex justify-content-between">
               <p className="card-text">
-                {props.mensa.coordinates?.[0]} 
-                <br/>
-                {props.mensa.coordinates?.[1]}
+                {props.mensa.address} 
               </p>
             </div>
           </div>

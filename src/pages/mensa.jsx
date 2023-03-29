@@ -73,7 +73,7 @@ function Mensa() {
         >
           {filteredMenu.map((m, i) => (
             <div>
-              <MealCard meal={m} key={m.id} />
+              <MealCard meal={m} key={m.id} btn={true} del={false} idx={i} />
             </div>
           ))}
         </div>

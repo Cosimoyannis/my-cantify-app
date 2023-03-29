@@ -1,3 +1,6 @@
+import eventBus from "../helper/eventBus";
+import { addItemToShoppingCard, addItemToShoppingCart, removeItemFromShoppingCart } from "../helper/shoppingCard";
+
 const burger = require("../images/burger2.png");
 
 const priceMap = {
@@ -8,7 +11,16 @@ others: "Andere",
 }
 
 const MealCard = (props) => {
-  return (
+    const addToCart = () => {
+        addItemToShoppingCart(props.meal)
+    }
+
+    const removeFromCart = () => {
+        removeItemFromShoppingCart(props.idx)
+        eventBus.dispatch("remove-shopping-card", { idx: props.idx });
+    }
+    
+    return (
     <div className="col">
         <div className="card mb-3">
             <div className="row g-0">
@@ -26,7 +38,8 @@ const MealCard = (props) => {
                             }
                             return <h5><span className="badge bg-secondary">{priceMap[key]}: {props.meal.prices[key]}€</span></h5>
                         })}
-                        <p className="card-text"></p>
+                        { props.btn ? <button type="button" class="btn btn-outline-primary" onClick={addToCart}>Add To Card</button> : ""}
+                        { props.del ? <button type="button" class="btn btn-outline-danger" onClick={removeFromCart}>Remove From Card</button> : ""}
                     </div>
                 {/* </div> */}
             </div>
