@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import DateSelectionPage from "./dateSelectionPage";
 import { getMensen } from "../index";
 import MensaCard from "../components/mensaCard";
 import { calculateDistance } from "../helper/distance";

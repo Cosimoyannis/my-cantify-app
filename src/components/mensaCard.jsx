@@ -1,7 +1,7 @@
 const MensaCard = (props) => {
   return (
     <a
-      href="/dateselectionpage"
+      href={"/mensa/" + props.mensa.id}
       style={{ color: "inherit", textDecoration: "none" }}
     >
       <div className="col">

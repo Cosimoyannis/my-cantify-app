@@ -14,6 +14,7 @@ import ShoppingCartPage from "./pages/shoppingCartPage";
 import LoginPage from "./pages/loginPage";
 import ProfileSettings from "./pages/profileSettings";
 import AllOrdersPage from "./pages/allOrdersPage";
+import Mensa from "./pages/mensa";
 
 function App() {
   return (
@@ -43,6 +44,12 @@ function App() {
             <Route exact path="/mealSelectionPage">
               <NavbarTopWithCart />
               <MealSelectionPage />
+              <Navbar />
+            </Route>
+            
+            <Route exact path="/mensa/:mensaID">
+              <NavbarTopWithCart />
+              <Mensa />
               <Navbar />
             </Route>
 
