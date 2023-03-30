@@ -52,8 +52,8 @@ const MealCard = (props) => {
                             })}
     
                             <div class="d-grid gap-2">
-                            { props.btn ? <button type="button" class="btn btn-warning rounded-pill" onClick={addToCart}>Add To Card</button> : ""}
-                            { props.del ? <button type="button" class="btn btn-danger rounded-pill" onClick={removeFromCart}>Remove From Card</button> : ""}
+                            { props.btn ? <button type="button" class="btn btn-warning rounded-pill" onClick={addToCart}>Add To Cart</button> : ""}
+                            { props.del ? <button type="button" class="btn btn-danger rounded-pill" onClick={removeFromCart}>Remove From Cart</button> : ""}
                             </div>
                             </div>
                         </div>
