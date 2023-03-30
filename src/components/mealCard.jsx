@@ -29,17 +29,24 @@ const MealCard = (props) => {
                 </div> */}
                 {/* <div className="col-md-8"> */}
                     <div className="card-body">
-                        <h5 className="card-title">{props.meal.name}</h5>
-                        <h5 className="card-subtitle mb-2 text-muted">{props.meal.category}</h5>
+                    <div class="col text-center">
+                        <h5 className="card-title d-flex justify-content-evenly">{props.meal.name}</h5>
+                        <h5 className="card-subtitle mb-2 text-muted d-flex justify-content-evenly">{props.meal.category}</h5>
+
                         <p className="card-text">{props.meal.notes.map(note =>  <span className="badge rounded-pill text-bg-success" style={{ marginRight: "5px" }}>{note}</span>)}</p>
+
                         {Object.keys(props.meal.prices).map(key => {
                             if (props.meal.prices[key] === null) {
-                                return <h5><span className="badge bg-secondary">{priceMap[key]}: N/A</span></h5>
+                                return <p className="card-text badge text-secondary">{priceMap[key]}: N/A</p>
                             }
-                            return <h5><span className="badge bg-secondary">{priceMap[key]}: {props.meal.prices[key]}€</span></h5>
+                            return <p className="card-text badge text-secondary">{priceMap[key]}: {props.meal.prices[key]}€</p>
                         })}
-                        { props.btn ? <button type="button" class="btn btn-outline-primary" onClick={addToCart}>Add To Card</button> : ""}
-                        { props.del ? <button type="button" class="btn btn-outline-danger" onClick={removeFromCart}>Remove From Card</button> : ""}
+
+                        <div class="d-grid gap-2">
+                        { props.btn ? <button type="button" class="btn btn-warning rounded-pill" onClick={addToCart}>Add To Card</button> : ""}
+                        { props.del ? <button type="button" class="btn btn-danger rounded-pill" onClick={removeFromCart}>Remove From Card</button> : ""}
+                        </div>
+                        </div>
                     </div>
                 {/* </div> */}
             </div>
