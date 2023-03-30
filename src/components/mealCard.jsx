@@ -14,7 +14,7 @@ others: "Andere",
 const MealCard = (props) => {
     const addToCart = () => {
         addItemToShoppingCart(props.meal)
-        toast.success('You have added '+ props.meal.name +' to your cart!', {
+        toast.success('You have added '+ props.meal.name +' to your cart.', {
                     toastId: 'success1',
                     position: toast.POSITION.TOP_RIGHT
                 })
@@ -22,7 +22,7 @@ const MealCard = (props) => {
 
     const removeFromCart = () => {
         removeItemFromShoppingCart(props.idx)
-        toast.success('You have successfully removed an item from your cart!', {
+        toast.success('You have successfully removed an item from your cart.', {
                             toastId: 'success2',
                             position: toast.POSITION.TOP_RIGHT
                         })
