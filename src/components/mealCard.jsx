@@ -1,6 +1,7 @@
 import eventBus from "../helper/eventBus";
 import { addItemToShoppingCard, addItemToShoppingCart, removeItemFromShoppingCart } from "../helper/shoppingCard";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const burger = require("../images/burger2.png");
 
 const priceMap = {
@@ -13,10 +14,18 @@ others: "Andere",
 const MealCard = (props) => {
     const addToCart = () => {
         addItemToShoppingCart(props.meal)
+        toast.success('You have added '+ props.meal.name +' to your cart!', {
+                    toastId: 'success1',
+                    position: toast.POSITION.TOP_RIGHT
+                })
     }
 
     const removeFromCart = () => {
         removeItemFromShoppingCart(props.idx)
+        toast.success('You have successfully removed an item from your cart!', {
+                            toastId: 'success2',
+                            position: toast.POSITION.TOP_RIGHT
+                        })
         eventBus.dispatch("remove-shopping-card", { idx: props.idx });
     }
     
@@ -38,8 +47,8 @@ const MealCard = (props) => {
                             }
                             return <h5><span className="badge bg-secondary">{priceMap[key]}: {props.meal.prices[key]}€</span></h5>
                         })}
-                        { props.btn ? <button type="button" class="btn btn-outline-primary" onClick={addToCart}>Add To Card</button> : ""}
-                        { props.del ? <button type="button" class="btn btn-outline-danger" onClick={removeFromCart}>Remove From Card</button> : ""}
+                        { props.btn ? <button type="button" class="btn btn-outline-primary" onClick={addToCart}>Add To Cart</button> : ""}
+                        { props.del ? <button type="button" class="btn btn-outline-danger" onClick={removeFromCart}>Remove From Cart</button> : ""}
                     </div>
                 {/* </div> */}
             </div>

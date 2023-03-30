@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getMenu } from "../helper/menu";
 import MealCard from "../components/mealCard";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Mensa() {
   let { mensaID } = useParams();
@@ -10,6 +12,7 @@ function Mensa() {
   const [filteredMenu, setFilteredMenu] = useState(null);
   const [categories, setCategories] = useState([]);
   const [checkedCat, setCheckedCat] = useState("Alle")
+
 
   useEffect(() => {
     // new Date().toISOString().split("T")[0]

@@ -15,6 +15,8 @@ import LoginPage from "./pages/loginPage";
 import ProfileSettings from "./pages/profileSettings";
 import AllOrdersPage from "./pages/allOrdersPage";
 import Mensa from "./pages/mensa";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -50,6 +52,7 @@ function App() {
             <Route exact path="/mensa/:mensaID">
               <NavbarTopWithCart />
               <Mensa />
+              <ToastContainer />
               <Navbar />
             </Route>
 
@@ -65,6 +68,7 @@ function App() {
 
             <Route exact path="/shoppingCartPage">
               <ShoppingCartPage />
+              <ToastContainer />
               <Navbar />
             </Route>
 
